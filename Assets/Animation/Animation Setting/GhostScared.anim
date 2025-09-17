@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PsUp
+  m_Name: GhostScared
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: f02c665fd3a5d1b47a73a5f950b297f1, type: 3}
+      value: {fileID: 21300000, guid: ba348156cda45da4fabe451c83070b95, type: 3}
     - time: 0.4
-      value: {fileID: 21300000, guid: cf09c73777283b04780cc22757cbc7de, type: 3}
+      value: {fileID: 21300000, guid: 77dd0c7d86a2ef144b1142c0416a94ec, type: 3}
+    - time: 0.8
+      value: {fileID: -6115854354315012733, guid: bfbd526b077429e4786e7a123176808e, type: 3}
+    - time: 1.2
+      value: {fileID: 21300000, guid: a2560cd7c138d284e8f516f972153175, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,14 +50,16 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: f02c665fd3a5d1b47a73a5f950b297f1, type: 3}
-    - {fileID: 21300000, guid: cf09c73777283b04780cc22757cbc7de, type: 3}
+    - {fileID: 21300000, guid: ba348156cda45da4fabe451c83070b95, type: 3}
+    - {fileID: 21300000, guid: 77dd0c7d86a2ef144b1142c0416a94ec, type: 3}
+    - {fileID: -6115854354315012733, guid: bfbd526b077429e4786e7a123176808e, type: 3}
+    - {fileID: 21300000, guid: a2560cd7c138d284e8f516f972153175, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6
+    m_StopTime: 1.4000001
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
