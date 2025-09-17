@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1e465db-f56c-4ef2-95c2-5f2027ef5629" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/../Animation/PacStu/Dead1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/PacStu/Dead1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Animation/PacStu/Dead2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/PacStu/Dead2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioManagerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudioManagerScript.cs" afterDir="false" />
     </list>
@@ -34,7 +37,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Feature-Audio&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feature-ManualLevel&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -54,6 +57,8 @@
       <workItem from="1757645445732" duration="2451000" />
       <workItem from="1757659839035" duration="47000" />
       <workItem from="1757660059807" duration="672000" />
+      <workItem from="1758081184378" duration="1062000" />
+      <workItem from="1758082284878" duration="616000" />
     </task>
     <servers />
   </component>
