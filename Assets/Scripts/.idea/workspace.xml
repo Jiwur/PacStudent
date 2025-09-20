@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1e465db-f56c-4ef2-95c2-5f2027ef5629" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/../Animation/AnimationClips/PsDead.anim" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/AnimationClips/PsDead.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation/AnimationClips/PsDown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/AnimationClips/PsDown.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation/AnimationClips/PsLeft.anim" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/AnimationClips/PsLeft.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation/AnimationClips/PsRight.anim" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/AnimationClips/PsRight.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation/AnimationContoller/StudentController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/AnimationContoller/StudentController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioManagerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudioManagerScript.cs" afterDir="false" />
-    </list>
+    <list default="true" id="e1e465db-f56c-4ef2-95c2-5f2027ef5629" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
