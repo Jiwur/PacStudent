@@ -3,101 +3,76 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioSource audioSource;
-    public AudioSource sfxSource; 
-    
-    public AudioClip introMusic;     
+    public AudioSource musicSource;   // 背景音乐
+    public AudioSource sfxSource;     // 脚步声
+
+    public AudioClip introMusic;      
     public AudioClip normalStateMusic;
-    public AudioClip scaredStateMusic;
-    public AudioClip startSceneMusic; 
+    public AudioClip stepClip;        // 脚步声 Step1
 
-    public AudioClip[] moveSounds; 
-    public AudioClip eatPelletSound;
-    public AudioClip wallCollisionSound;
-    public AudioClip deathSound;
-
-    private string currentSceneName;
     private bool hasIntroFinished = false;
     private float introStartTime;
 
     void Start()
     {
-        // 如果 audioSource 未绑定，则自动创建
-        if (audioSource == null)
+        if (musicSource == null)
         {
-            audioSource = gameObject.AddComponent<AudioSource>();
-            audioSource.playOnAwake = false;
+            musicSource = gameObject.AddComponent<AudioSource>();
+            musicSource.playOnAwake = false;
         }
-        
+
         if (sfxSource == null)
         {
             sfxSource = gameObject.AddComponent<AudioSource>();
             sfxSource.playOnAwake = false;
         }
 
-        currentSceneName = SceneManager.GetActiveScene().name;
-        
-        if (currentSceneName == "StartScene")
-        {
-            PlayMusic(startSceneMusic, true);
-        }
-        else 
-        {
-            PlayMusic(introMusic, false);
-            introStartTime = Time.time;
-        }
+        // 播放 Intro 音乐（不循环）
+        PlayMusic(introMusic, false);
+        introStartTime = Time.time;
     }
 
     void Update()
     {
-        if (currentSceneName != "StartScene" && !hasIntroFinished)
+        // Intro 播放完成或超时 3 秒 → 切换到 Normal
+        if (!hasIntroFinished)
         {
-            if (!audioSource.isPlaying || (Time.time - introStartTime) >= 3.0f)
+            if (!musicSource.isPlaying || (Time.time - introStartTime) >= 3.0f)
             {
                 hasIntroFinished = true;
                 PlayMusic(normalStateMusic, true);
             }
         }
     }
-    
-    void PlayMusic(AudioClip clip, bool loop)
+
+    private void PlayMusic(AudioClip clip, bool loop)
     {
-        audioSource.clip = clip;
-        audioSource.loop = loop;
-        audioSource.Play();
+        musicSource.clip = clip;
+        musicSource.loop = loop;
+        musicSource.Play();
     }
-    
-    public void SwitchToScaredStateMusic()
+
+    /// <summary>
+    /// 开始播放脚步声（循环）
+    /// </summary>
+    public void StartStepSound()
     {
-        PlayMusic(scaredStateMusic, true);
-    }
-    
-    public void PlayMoveSound()
-    {
-        if (moveSounds.Length > 0)
+        if (stepClip != null && !sfxSource.isPlaying)
         {
-            int randomIndex = Random.Range(0, moveSounds.Length);
-            sfxSource.PlayOneShot(moveSounds[randomIndex]);
+            sfxSource.clip = stepClip;
+            sfxSource.loop = true;
+            sfxSource.Play();
         }
     }
-    
-    public void PlayEatPelletSound()
+
+    /// <summary>
+    /// 停止脚步声
+    /// </summary>
+    public void StopStepSound()
     {
-        sfxSource.PlayOneShot(eatPelletSound);
-    }
-    
-    public void PlayWallCollisionSound()
-    {
-        sfxSource.PlayOneShot(wallCollisionSound);
-    }
-    
-    public void PlayDeathSound()
-    {
-        sfxSource.PlayOneShot(deathSound);
-    }
-    
-    public void ResumeNormalStateMusic()
-    {
-        PlayMusic(normalStateMusic, true);
+        if (sfxSource.isPlaying)
+        {
+            sfxSource.Stop();
+        }
     }
 }

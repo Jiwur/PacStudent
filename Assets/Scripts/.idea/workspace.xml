@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1e465db-f56c-4ef2-95c2-5f2027ef5629" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/../Animation/PacStu/Dead1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/PacStu/Dead1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation/PacStu/Dead2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/PacStu/Dead2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Animation/AnimationClips/PsDead.anim" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/AnimationClips/PsDead.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Animation/AnimationClips/PsDown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/AnimationClips/PsDown.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Animation/AnimationClips/PsLeft.anim" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/AnimationClips/PsLeft.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Animation/AnimationClips/PsRight.anim" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/AnimationClips/PsRight.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Animation/AnimationContoller/StudentController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/AnimationContoller/StudentController.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioManagerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudioManagerScript.cs" afterDir="false" />
@@ -20,7 +23,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/AudioManagerScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/85Stu round.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AudioManagerScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -59,6 +63,11 @@
       <workItem from="1757660059807" duration="672000" />
       <workItem from="1758081184378" duration="1062000" />
       <workItem from="1758082284878" duration="616000" />
+      <workItem from="1758236920558" duration="13621000" />
+      <workItem from="1758344768493" duration="1328000" />
+      <workItem from="1758346683622" duration="165000" />
+      <workItem from="1758346858356" duration="5000" />
+      <workItem from="1758347054979" duration="67000" />
     </task>
     <servers />
   </component>
