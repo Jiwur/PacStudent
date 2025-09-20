@@ -2,35 +2,32 @@ using UnityEngine;
 
 public class PacStudentMovement : MonoBehaviour
 {
-    public float speed = 2f; // 移动速度
+    public float speed = 2f;
 
     private Animator animator;
-    private int currentTargetIndex = 1; // 从第一个目标点开始
-    private AudioManager audioManager;   // 引用 AudioManager
+    private int currentTargetIndex = 1;
+    private AudioManager audioManager;
 
     private Vector2[] pathPoints = new Vector2[]
     {
-        new Vector2(1, -3), // 起点
-        new Vector2(1, -1), // 上
-        new Vector2(6, -1), // 右
-        new Vector2(6, -5), // 下
-        new Vector2(1, -5), // 左
-        new Vector2(1, -3)  // 回到起点
+        new Vector2(1, -3),
+        new Vector2(1, -1),
+        new Vector2(6, -1),
+        new Vector2(6, -5),
+        new Vector2(1, -5),
+        new Vector2(1, -3)
     };
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        audioManager = FindObjectOfType<AudioManager>();
+        audioManager = Object.FindFirstObjectByType<AudioManager>();
 
         transform.position = pathPoints[0];
         UpdateAnimation(currentTargetIndex);
         
         if (audioManager != null)
             audioManager.StartStepSound();
-
-        //if (audioManager != null)
-            //audioManager.PlayStep1();
     }
 
     private void Update()
@@ -46,8 +43,7 @@ public class PacStudentMovement : MonoBehaviour
             target,
             speed * Time.deltaTime
         );
-
-        // 一旦到达目标点，立刻切换到下一个目标点（不中断）
+        
         if ((Vector2)transform.position == target)
         {
             currentTargetIndex = (currentTargetIndex + 1) % pathPoints.Length;
@@ -63,7 +59,7 @@ public class PacStudentMovement : MonoBehaviour
             case 2: animator.Play("PsRight"); break;
             case 3: animator.Play("PsDown"); break;
             case 4: animator.Play("PsLeft"); break;
-            case 5: animator.Play("PsUp"); break; // 回到起点
+            case 5: animator.Play("PsUp"); break;
         }
     }
 }
